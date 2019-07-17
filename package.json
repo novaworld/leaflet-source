@@ -1,0 +1,33 @@
+{
+  "name": "Leaflet.source",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "keywords": [
+    "leaflet-source"
+  ],
+  "author": "Truong Thanh Tung <ttungbmt@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.2",
+    "csv2geojson": "^5.1.1",
+    "togeojson": "^0.16.0",
+    "shpjs": "^3.4.3",
+    "wellknown": "^0.5.0",
+    "polyline": "^0.2.0",
+    "shp-write": "^0.3.2",
+    "tokml": "^0.4.0",
+    "topojson": "^3.0.2"
+  },
+  "devDependencies": {
+
+  }
+}
